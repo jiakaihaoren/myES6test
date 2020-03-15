@@ -1,0 +1,30 @@
+{
+  "name": "es6test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testES6.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-config-airbnb": "^18.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel testES6.js --watch --out-file dist/testES6babel.js"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-es2015","babel-polyfill"
+    ]
+  },
+  "author": "",
+  "license": "ISC"
+}
